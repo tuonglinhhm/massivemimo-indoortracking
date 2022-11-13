@@ -43,17 +43,13 @@ train_ADP, test_ADP, train_Loc, test_Loc = get_data()
 with tf.device("gpu:0"):
     NN_model = Sequential()
 # The Input Layer :
-    NN_model.add(Conv2D(4, (64,64), padding='same', kernel_initializer='normal',input_shape = (32,32,1), activation='relu'))
+    NN_model.add(Conv2D(1, (64,64), padding='same', kernel_initializer='normal',input_shape = (64,64,1), activation='relu'))
     NN_model.add(BatchNormalization())
     NN_model.add(MaxPool2D(pool_size=(2, 2)))
 
 # The Hidden Layers :
-    NN_model.add(Conv2D(1, (64,64), padding='same', kernel_initializer='normal', activation='relu'))
-    NN_model.add(BatchNormalization())
-    NN_model.add(MaxPool2D(pool_size=(2, 2)))
     NN_model.add(Conv2D(4, (16,16), padding='same', kernel_initializer='normal', activation='relu'))
     NN_model.add(BatchNormalization())
-    NN_model.add(MaxPool2D(pool_size=(2, 2)))
     NN_model.add(Conv2D(8, (8,8), padding='same', kernel_initializer='normal', activation='relu'))
     NN_model.add(BatchNormalization())
     NN_model.add(MaxPool2D(pool_size=(2, 2)))
@@ -75,4 +71,4 @@ with tf.device("gpu:0"):
     checkpoint_name = 'weigths/Weights-{epoch:03d}--{val_loss:.5f}.hdf5'
     checkpoint = ModelCheckpoint(checkpoint_name, monitor='val_loss', verbose = 1, save_best_only = True, mode ='auto')
     callbacks_list = [checkpoint]
-    NN_model.fit(train_ADP, train_Loc, epochs=200, batch_size=100, validation_split = 0.05, callbacks=callbacks_list)
+    NN_model.fit(train_ADP, train_Loc, epochs=10000, batch_size=100, validation_split = 0.05, callbacks=callbacks_list)
