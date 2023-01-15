@@ -2,6 +2,7 @@
 % PhiMax = 2*pi; % Max Azimuth Angle
 % ThetaMax = -pi/2;  % Max Elevation Angle
 
+
 function [antennaGainAE] = AntennaTemp (antennaGainRes,demoMode)
 Length = 1;
 % antennaGainRes = 20;

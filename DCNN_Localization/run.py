@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore', category=DeprecationWarning)
 ## Data Preparation to feed the CNN training
 def get_data():
     #get train data
-    data_path ='Data/TrainDCNNI1.npz'
+    data_path ='Data/DeepMIMO.npz'
     data = load(data_path)
     M = np.reshape(data['ADP'],(550*121,32,32,1))
     train_ADP, test_ADP, train_Loc, test_Loc = train_test_split(M, data['Loc'], test_size=0.001, random_state=42)
@@ -39,7 +39,6 @@ def get_data():
 train_ADP, test_ADP, train_Loc, test_Loc = get_data()
 
 
-## Neural Network Artitechture and Training
 with tf.device("gpu:0"):
     NN_model = Sequential()
 # The Input Layer :

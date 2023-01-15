@@ -1,7 +1,7 @@
 % 3D Ray Tracing is just interface that creates variables for ray RayTracingEng_V02.m
 % Created by: Salaheddin Hosseinzadeh
 % Created on: 26 / Aug / 2016 (my GCU Office)
-% Last Revision: 10.10.2017
+% Last Revision: 10.10.2013
 % Notes: 
 
 %       1- Free Space Loss under 1 meter (done)

@@ -4,7 +4,7 @@
 % Last Revision: 26 / Aug / 2016 
 % Notes: PLEASE REFR TO RayTracing3D_v02.m for help
 
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
 % Producing Plan as Image
 % finding linear mapping that maps:
 % boundary(1,1) ---->  1 

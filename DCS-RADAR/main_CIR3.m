@@ -2,7 +2,7 @@ function main_CIR3
 clear;clc
 load('Bg_CIR_VAR.mat');
 load('Dyn_CIR_VAR.mat');
-load('AnchorPos.mat')
+load('AnchorPos2.mat')
 
 %% prediction labels
 diff_ToF01 = abs(Dyn_real_ToF01-ToF_TRx01);

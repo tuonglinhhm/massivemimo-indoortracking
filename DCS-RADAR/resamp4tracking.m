@@ -4,7 +4,7 @@ Time_pair_tmp = [Time_pair01 Time_pair02 Time_pair04 Time_pair12 Time_pair14 Tim
 tst_MU_tmp = [tst_MU01;tst_MU02;tst_MU04;tst_MU12;tst_MU14;tst_MU24];
 tst_MU_tmp = tst_MU_tmp(idx_tmp,:);
 
-numTime = 10000;
+numTime = 5000;
 t_START = Time_pair_tmp(1);
 t_END = Time_pair_tmp(end);
 TIME_reshape = t_START:(t_END-t_START)/numTime:t_END;
