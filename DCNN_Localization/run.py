@@ -30,7 +30,7 @@ def get_data():
     #get train data
     data_path ='Data/DeepMIMO.npz'
     data = load(data_path)
-    M = np.reshape(data['ADP'],(550*121,32,32,1))
+    M = np.reshape(data['ADP'],(320*120))
     train_ADP, test_ADP, train_Loc, test_Loc = train_test_split(M, data['Loc'], test_size=0.001, random_state=42)
 
     return train_ADP, test_ADP, train_Loc, test_Loc
