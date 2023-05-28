@@ -1,6 +1,6 @@
 
 # massivemimo-indoortracking
-Several code piece for "High-accuracy Radio Positioning and Sensing: A Dark Side of Privacy Risks in 6G Networks"
+Several code piece for "Understanding the Privacy Risks of High-accuracy Radio Positioning and Sensing in Wireless Networks"
 
 Step to run
 

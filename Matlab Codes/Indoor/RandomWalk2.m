@@ -114,15 +114,15 @@ for i = 2 : N
         end
     end
 end
-% for i = 1 : N
-%     Loc(i,:) = DeepMIMO_dataset{1}.user{P(i)}.loc;
-%     x(i) = Loc(i,1);
-%     y(i) = Loc(i,2);
-% end  
-% figure
-%  plot(x,y)
-% end
-% end
+ for i = 1 : N
+     Loc(i,:) = DeepMIMO_dataset{1}.user{P(i)}.loc;
+     x(i) = Loc(i,1);
+     y(i) = Loc(i,2);
+ end  
+ figure
+  plot(x,y)
+ end
+ end
 end
 
             

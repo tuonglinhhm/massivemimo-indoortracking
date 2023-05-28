@@ -5,7 +5,7 @@
 
 function [antennaGainAE] = AntennaTemp (antennaGainRes,demoMode)
 Length = 1;
-% antennaGainRes = 20;
+antennaGainRes = 20;
 
 phi= linspace(0,2*pi,antennaGainRes);
 theta= linspace(0,pi,antennaGainRes);

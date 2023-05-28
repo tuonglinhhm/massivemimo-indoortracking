@@ -38,12 +38,12 @@ for i = 1:numel(diff_ToF24)
 end
 
 %% train
-trainSet01 = Dyn_re_tUWB01(Dyn_re_tUWB01<73.8);
-trainSet02 = Dyn_re_tUWB02(Dyn_re_tUWB02<73.8);
-trainSet04 = Dyn_re_tUWB04(Dyn_re_tUWB04<73.8);
-trainSet12 = Dyn_re_tUWB12(Dyn_re_tUWB12<73.8);
-trainSet14 = Dyn_re_tUWB14(Dyn_re_tUWB14<73.8);
-trainSet24 = Dyn_re_tUWB24(Dyn_re_tUWB24<73.8);
+trainSet01 = Dyn_re_tUWB01(Dyn_re_tUWB01<60);
+trainSet02 = Dyn_re_tUWB02(Dyn_re_tUWB02<60);
+trainSet04 = Dyn_re_tUWB04(Dyn_re_tUWB04<60);
+trainSet12 = Dyn_re_tUWB12(Dyn_re_tUWB12<60);
+trainSet14 = Dyn_re_tUWB14(Dyn_re_tUWB14<60);
+trainSet24 = Dyn_re_tUWB24(Dyn_re_tUWB24<60);
 
 trainIDX01 = numel(trainSet01);
 trainIDX02 = numel(trainSet02);

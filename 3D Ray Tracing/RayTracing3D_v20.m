@@ -97,6 +97,7 @@
 %                         36.9,23.9,ceilingLevel
 %                         36.9,0,groundLevel
 %                         ];
+
 % 
 %  !!!! DONT FORGET THEY NEED TO BE COLOCKWISE OTHER WISE THEY STRUCTURE
 %  THAT WILL BE VIEWED IS GOING TO BE A FUNNY MESS !!!
@@ -168,7 +169,7 @@ refDistance = 1;            % Reference distance from Tx
 FPSLRefLoss = 0;
 
 
-antennaGainRes = 40;
+antennaGainRes = 30;
 antennaEffiLoss = -11.5;         % dB antenna efficiency, missmatch and loss all together
 
 ceilingEnable = 0; % Allowing to define ceiling and floor
