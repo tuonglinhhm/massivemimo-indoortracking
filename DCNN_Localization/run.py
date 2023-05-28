@@ -70,4 +70,4 @@ with tf.device("gpu:0"):
     checkpoint_name = 'weigths/Weights-{epoch:03d}--{val_loss:.5f}.hdf5'
     checkpoint = ModelCheckpoint(checkpoint_name, monitor='val_loss', verbose = 1, save_best_only = True, mode ='auto')
     callbacks_list = [checkpoint]
-    NN_model.fit(train_ADP, train_Loc, epochs=10000, batch_size=100, validation_split = 0.05, callbacks=callbacks_list)
+    NN_model.fit(train_ADP, train_Loc, epochs=5000, batch_size=100, validation_split = 0.05, callbacks=callbacks_list)
